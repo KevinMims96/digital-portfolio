@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: cornsilk;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+/* Navigation Bar */
+
+#navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#navigation ul.navigation-menu, #navigation ul.logos {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+#navigation li {
+    list-style-type: none;
+    padding-right: 1.5rem;
+    transition: color 350ms ease-in 250ms;
+}
+
+#navigation li a {
+    text-decoration: none;
+    transition: color 350ms ease-in 250ms;
+}
+
+#navigation li i {
+    transition: color 350ms ease-in 250ms;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 15%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+}
+
+header h1 {
+    transition: color 350ms ease-in 250ms;
+}
+header h1:hover, #navigation li a:hover, #navigation li i:hover {
+    color: rgb(255, 246, 144);
+}
+
+/* Introduction */
+
+#introduction {
+    background-color: rgba(129, 129, 129, 0.795);
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid cornsilk;
+}
+
+#introduction .intro {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+}
+
+#introduction .intro h2, #introduction .intro h4 {
+    text-align: center;
+}
+
+#introduction p.first, #introduction p.second {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Media */
+
+#media {
+    width: 90%;
+    height: 500px;
+    background-image: url(../media/phone-swipe.txt);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#media h5 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    padding: 2%;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* Multi-Display */
+
+#multi-display {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+}
+
+#multi-display .display-section {
+    box-sizing: border-box;
+    width: 30%;
+    background-color: rgba(129, 129, 129, 0.795);
+    border-radius: 5px;
+    padding-bottom: 1%;
+}
+
+#multi-display .display-section .image {
+    padding: 5% 0;
+}
+
+#multi-display .display-section img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid cornsilk;
+    border-radius: 2px;
+}
+
+
+#multi-display p {
+    margin: 0 auto;
+    font-family: 'Roboto-Slab', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 2%;
+    width: 80%;
+}
+
+/* Contact Section */
+
+#contact {
+    margin: 0 auto;
+    width: 80%;
+    font-family: "Comfortaa", cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contact .button {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 25%;
+    background-color: rgba(0, 161, 161, 0.733);
+    padding: 2%;
+    border: 2px solid cornsilk;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+#contact a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact i {
+        display: none;
+    }
+}
