@@ -59,27 +59,42 @@ html {
 #navigation .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    min-width: 100px;
+    background-color: black;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
+  }
+
+  #navigation .dropdown-content ul li {
+      padding: 10px 0;
   }
 
   #navigation .dropdown:hover .dropdown-content {
       display: block;
     }
+/* Nav Bar Responsive */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width: 600px) {
     #navigation .navigation-menu .nav {
         display: none;
     }
 }
+
+@media only screen and (min-width: 600px) {
+    #navigation .dropdown {
+        display: none;
+    }
+}
+
+
 /* Header */
 
 header {
     text-align: center;
     padding: 15%;
     font-family: 'Comfortaa', cursive;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 header h1 {
@@ -88,6 +103,15 @@ header h1 {
 header h1:hover, #navigation li a:hover, #navigation li i:hover {
     color: rgb(255, 246, 144);
 }
+
+/* Header Responsive */
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    header {
+        padding-top: 25%;
+    }
+}
+
 
 /* Introduction */
 
@@ -135,6 +159,16 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
     text-shadow: 1px 1px 5px black;
 }
 
+/*  Media Responsive */
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    #media {
+        background-image: url(../media/digital-marketing-gif.gif);
+        width: 300px;
+        height: 300px;
+    }
+}
+
 /* Multi-Display */
 
 #multi-display {
@@ -174,6 +208,12 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
     width: 80%;
 }
 
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    #multi-display p {
+        font-size: 0.7rem;
+    }
+}
+
 /* Contact Section */
 
 #contact {
@@ -205,5 +245,11 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
 @media only screen and (max-width: 1200px) {
     #contact i {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    #contact .button {
+        width: 250px;
     }
 }
