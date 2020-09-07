@@ -43,10 +43,36 @@ html {
     transition: color 350ms ease-in 250ms;
 }
 
+#navigation .navigation-menu .nav {
+    display: flex;
+}
+
 #navigation li i {
     transition: color 350ms ease-in 250ms;
 }
 
+#navigation .dropdown {
+    position: relative;
+    display: block;
+  }
+
+#navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  #navigation .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+@media only screen and (max-width: 400px) {
+    #navigation .navigation-menu .nav {
+        display: none;
+    }
+}
 /* Header */
 
 header {
