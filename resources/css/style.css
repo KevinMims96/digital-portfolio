@@ -52,6 +52,13 @@ html {
     padding: 1rem 1.25rem;
     text-decoration: none;
     display: block;
+    transition: background-color 250ms linear,
+    color 250ms linear;
+  }
+
+  .dropdown-content a:hover {
+      background-color: rgb(109, 109, 109);
+      color: black;
   }
 
   .logos {
