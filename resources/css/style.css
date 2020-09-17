@@ -63,7 +63,11 @@ html {
   }
 /* Nav Bar Responsive */
 
-
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    #navigation {
+        font-size: 1rem;
+    }
+}
 
 /* Header */
 
