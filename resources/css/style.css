@@ -63,10 +63,7 @@ html {
   }
 /* Nav Bar Responsive */
 
-@media only screen and (min-width: 200px) and (max-width: 600px) {
 
-
-}
 
 /* Header */
 
@@ -89,7 +86,7 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     header {
         padding-top: 40%;
-        font-size: 1;
+        font-size: 1rem;
     }
 }
 
@@ -103,6 +100,7 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
     margin: 0 auto;
     border-radius: 5px;
     border: 2px solid cornsilk;
+    text-align: center;
 }
 
 #introduction .intro {
@@ -152,26 +150,24 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
 
 /* Multi-Display */
 
-#multi-display {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-
+.display-section {
+    float: left;
+    margin: 1% 1%;
+    width: 30%;
 }
 
-#multi-display .display-section {
+ .display-section {
     box-sizing: border-box;
     width: 30%;
     background-color: rgba(129, 129, 129, 0.795);
     border-radius: 5px;
     padding-bottom: 1%;
 }
-
-#multi-display .display-section .image {
+.display-section .image {
     padding: 5% 0;
 }
 
-#multi-display .display-section img {
+ .display-section img {
     width: 80%;
     display: block;
     margin: 0 auto;
@@ -180,7 +176,8 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
 }
 
 
-#multi-display p {
+ .display-section p {
+    display: none;
     margin: 0 auto;
     font-family: 'Roboto-Slab', sans-serif;
     font-size: 20px;
@@ -189,15 +186,27 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
     width: 80%;
 }
 
+ .display-section h5 {
+    font-size: 2rem;
+    font-family: "Roboto Slab", sans-serif;
+    text-align: center;
+    padding: 3%;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 600px) {
-    #multi-display p {
+    .display-section p {
         font-size: 0.7rem;
+    }
+
+    .display-section h5 {
+        font-size: 0.85rem;
     }
 }
 
 /* Contact Section */
 
 #contact {
+    padding-top: 30%;
     margin: 0 auto;
     width: 80%;
     font-family: "Comfortaa", cursive;
