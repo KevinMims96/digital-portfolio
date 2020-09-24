@@ -17,7 +17,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 20%;
+    height: auto;
     background-color: cornsilk;
     padding: 1rem;
     font-family: "Comfortaa", cursive;
@@ -26,16 +26,16 @@ html {
 }
 
 #navigation .main-logo img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 #navigation .main-logo {
-    padding-left: 5%;
+    width: 100px;
+    height: 100px;
 }
 .dropdown {
-    padding-top: 1%;
-    padding-left: 3%;
+    padding: 4%;
 }
 
 .dropbtn  /*drop down button styling */ {
@@ -62,6 +62,7 @@ html {
 
 .dropdown /*postion dropdown content*/ {
     position: relative;
+    margin: auto;
   }
 
 .dropdown-content a {
@@ -91,6 +92,7 @@ html {
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     #navigation {
         font-size: 1rem;
+        display: inline-flex;
     }
 }
 
