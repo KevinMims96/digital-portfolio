@@ -1,12 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    color: cornsilk;
+    color: black;
     box-sizing: border-box;
 }
 
 html {
-    background-color: black;
+    background-color:#fff8dc;
 }
 
 /* Navigation Bar */
@@ -17,15 +17,32 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
-    padding: 2rem;
+    height: 20%;
+    background-color: cornsilk;
+    padding: 1rem;
     font-family: "Comfortaa", cursive;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    box-shadow: 5px 0px 5px grey;
+}
+
+#navigation .main-logo img {
+    width: 50%;
+    height: auto;
+}
+
+#navigation .main-logo {
+    padding-left: 5%;
+}
+.dropdown {
+    padding-top: 1%;
+    padding-left: 3%;
 }
 
 .dropbtn  /*drop down button styling */ {
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
     color: white;
-    padding: 16px;
     border: none;
 }
 
@@ -48,7 +65,7 @@ html {
   }
 
 .dropdown-content a {
-    background-color: black;
+    background-color: cornsilk;
     padding: 1rem 1.25rem;
     text-decoration: none;
     display: block;
@@ -57,12 +74,13 @@ html {
   }
 
   .dropdown-content a:hover {
-      background-color: rgb(109, 109, 109);
-      color: black;
+      background-color: rgb(247, 75, 75);
+      color: white;
   }
 
   .logos {
       display: flex;
+      justify-content: center;
   }
 
   .logos a {
