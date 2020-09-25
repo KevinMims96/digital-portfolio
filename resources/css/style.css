@@ -12,6 +12,7 @@ html {
 /* Navigation Bar */
 
 #navigation {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -21,8 +22,13 @@ html {
     background-color: cornsilk;
     padding: 1rem;
     font-family: "Comfortaa", cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-shadow: 5px 0px 5px grey;
+}
+
+#navigation .main-logo {
+    width: 100px;
+    height: 100px;
 }
 
 #navigation .main-logo img {
@@ -34,12 +40,12 @@ html {
     width: 100px;
     height: 100px;
 }
-.dropdown {
-    padding: 4%;
+#navigation .dropdown {
+    margin: 1px 5px;
+    padding: 2%;
 }
 
 .dropbtn  /*drop down button styling */ {
-    width: 50%;
     margin-top: 10px;
     text-align: center;
     color: white;
@@ -62,7 +68,7 @@ html {
 
 .dropdown /*postion dropdown content*/ {
     position: relative;
-    margin: auto;
+    margin: 0 auto;
   }
 
 .dropdown-content a {
@@ -99,17 +105,11 @@ html {
 /* Header */
 
 header {
+    text-shadow: 3px 3px 8px rgb(83, 83, 83);
     text-align: center;
-    padding: 15%;
+    padding: 20% 0 10% 0;
     font-family: 'Comfortaa', cursive;
     font-size: 2rem;
-}
-
-header h1 {
-    transition: color 350ms ease-in 250ms;
-}
-header h1:hover, #navigation li a:hover, #navigation li i:hover {
-    color: rgb(255, 246, 144);
 }
 
 /* Header Responsive */
@@ -125,19 +125,19 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
 /* Introduction */
 
 #introduction {
-    background-color: rgba(129, 129, 129, 0.795);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    background-color: rgba(173, 173, 173, 0.795);
     width: 75%;
     height: auto;
     margin: 0 auto;
     border-radius: 5px;
-    border: 2px solid cornsilk;
     text-align: center;
 }
 
 #introduction .intro {
     padding-top: 25px;
     padding-bottom: 25px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 22px;
 }
 
@@ -153,6 +153,7 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
 /* Media */
 
 #media {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
     width: 90%;
     height: 500px;
     background-image: url(../media/phone-swipe.txt);
@@ -186,12 +187,10 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
 /* Multi-Display */
 
 .display-section {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
     float: left;
-    margin: 1% 1%;
+    margin: 2% 1.5%;
     width: 30%;
-}
-
- .display-section {
     box-sizing: border-box;
     width: 30%;
     background-color: rgba(129, 129, 129, 0.795);
@@ -237,6 +236,12 @@ header h1:hover, #navigation li a:hover, #navigation li i:hover {
     .display-section h5 {
         font-size: 0.85rem;
     }
+}
+
+/* Footer */
+
+footer {
+    font-size: 2rem;
 }
 
 /* Contact Section */
