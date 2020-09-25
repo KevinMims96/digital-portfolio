@@ -27,8 +27,8 @@ html {
 }
 
 #navigation .main-logo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 #navigation .main-logo img {
@@ -36,10 +36,6 @@ html {
     height: auto;
 }
 
-#navigation .main-logo {
-    width: 100px;
-    height: 100px;
-}
 #navigation .dropdown {
     margin: 1px 5px;
     padding: 2%;
@@ -99,6 +95,11 @@ html {
     #navigation {
         font-size: 1rem;
         display: inline-flex;
+    }
+
+    #navigation .main-logo {
+        width: 75px;
+        height: 75px;
     }
 }
 
