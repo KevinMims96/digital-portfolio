@@ -56,6 +56,7 @@ html {
 .dropdown-content /* drop down hidden by default */ {
     display: none;
     position: absolute;
+    right: 0;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -100,6 +101,10 @@ html {
     #navigation .main-logo {
         width: 75px;
         height: 75px;
+    }
+
+    #navigation .dropdown {
+        margin-right: 1%;
     }
 }
 
