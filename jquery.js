@@ -15,3 +15,5 @@ $(".third-d-dropdown").on("click", () => {
     $(".third-description").slideToggle()
 })
 })
+
+//1.6 Update
